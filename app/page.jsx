@@ -26,8 +26,8 @@ export default function Home() {
   }
 
   return (
-    <main className="min-h-screen items-center justify-around py-24 w-2/3 mx-auto">
-      <div id="cards" className='grid gap-4 gap-y-12 gid-cols-2 sm:grid-cols-4 items-center'>
+    <main className="min-h-screen items-center justify-between py-24 w-2/3 mx-auto">
+      <div id="cards" className='grid gap-4 gap-y-12 gid-cols-2 sm:grid-cols-4 items-center mx-auto  justify-between'>
       {cards?.map((card) => {
         return <Image
           src={`/images/${card.card}.png`}
@@ -35,7 +35,7 @@ export default function Home() {
           height={200}
           alt={card.card}
           key={card.card}
-          className={`transform transition duration-500 ease-in-out hover:scale-110 ${card.clicked ? "opacity-20" : ""}`}
+          className={`transform transition duration-500 ease-in-out hover:scale-110 justify-self-center  ${card.clicked ? "opacity-20" : ""}`}
           onClick={() => handleClick(card.card)} />
       })
       }
