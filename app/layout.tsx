@@ -17,7 +17,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      {process.env.NODE_ENV === 'production' && (<GoogleAnalytics GA_MEASUREMENT_ID="G-ZSFX5YDH6P" />)}
+      {process.env.NODE_ENV === 'production' && (<GoogleAnalytics GA_MEASUREMENT_ID="G-RYKFWMP3BV" />)}
       <body className={inter.className}>{children}</body>
     </html>
   )
